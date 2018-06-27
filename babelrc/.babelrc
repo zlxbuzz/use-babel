@@ -1,0 +1,22 @@
+{
+  presets:[
+    "stage-2",//包含transform-object-rest-spread等规则，
+    [
+      "env",{
+        "targets": {
+          "browsers": [
+            "last 20 versions",
+            "ie > 8"
+          ],
+          "node": "current"
+        },
+        "modules": false,
+        "useBuiltIns": true,//和babel-polyfill搭配,替换import 'babel-polyfill'
+        "debug": true//开启调试模式
+      }
+    ]
+  ],
+  plugins: [
+    /* "transform-runtime" */
+  ]
+}
